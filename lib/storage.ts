@@ -10,6 +10,9 @@ export const defaultAppData: AppData = {
   contentPlans: [],
   reviews: [],
   milestones: [],
+  luckyDrawCampaigns: [],
+  luckyDrawEntries: [],
+  luckyDrawWinners: [],
 };
 
 export async function loadAppData(): Promise<AppData> {

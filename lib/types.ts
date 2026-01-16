@@ -97,6 +97,47 @@ export interface Tagline {
   emoji?: string;
 }
 
+export interface LuckyDrawCampaign {
+  id: string;
+  name: string;
+  description: string;
+  startDate: string;
+  endDate: string;
+  eventId?: string; // Optional link to event
+  qrCodeUrl: string;
+  googleFormUrl: string;
+  requirements: {
+    followTikTok: boolean;
+    shareTikTok: boolean;
+    tagFriends: number; // minimum number of friends to tag
+  };
+  prizeDescription: string;
+  status: "draft" | "active" | "ended";
+  createdAt: string;
+}
+
+export interface LuckyDrawEntry {
+  id: string;
+  campaignId: string;
+  name: string;
+  phone: string;
+  email?: string;
+  tiktokUsername?: string;
+  verified: boolean;
+  verificationNotes?: string;
+  submittedAt: string;
+}
+
+export interface LuckyDrawWinner {
+  id: string;
+  campaignId: string;
+  entryId: string;
+  selectedAt: string;
+  notified: boolean;
+  claimed: boolean;
+  claimedAt?: string;
+}
+
 export interface AppData {
   events: Event[];
   checklists: BoothChecklist[];
@@ -104,5 +145,8 @@ export interface AppData {
   contentPlans: ContentPlan[];
   reviews: Review[];
   milestones: Milestone[];
+  luckyDrawCampaigns: LuckyDrawCampaign[];
+  luckyDrawEntries: LuckyDrawEntry[];
+  luckyDrawWinners: LuckyDrawWinner[];
   lastSync?: string;
 }

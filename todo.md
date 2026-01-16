@@ -87,3 +87,14 @@
 - [x] Implement performance metrics display (views, engagement)
 - [x] Add copy-to-clipboard feature for hooks
 - [x] Create hook detail view with full text and stats
+
+## Lucky Draw Campaign
+
+- [x] Create Lucky Draw data model (Campaign, Entry, Winner)
+- [x] Build Lucky Draw campaign management screen
+- [x] Generate QR code for registration
+- [x] Create Google Form integration URL
+- [x] Add TikTok viral requirement tracking
+- [x] Implement entry list with verification status
+- [x] Build winner selection system
+- [x] Add campaign statistics dashboard
