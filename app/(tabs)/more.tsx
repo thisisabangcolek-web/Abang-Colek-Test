@@ -1,6 +1,7 @@
 import { ScrollView, Text, View, TouchableOpacity, Platform } from "react-native";
 import * as Haptics from "expo-haptics";
 import { ScreenContainer } from "@/components/screen-container";
+import { JinglePlayer } from "@/components/jingle-player";
 import { taglines } from "@/lib/preset-data";
 
 export default function MoreScreen() {
@@ -15,6 +16,9 @@ export default function MoreScreen() {
       <ScrollView>
         <View className="gap-6">
           <Text className="text-3xl font-bold text-foreground">More</Text>
+
+          {/* Jingle Player */}
+          <JinglePlayer />
 
           {/* Brand Kit Section */}
           <View className="gap-3">
