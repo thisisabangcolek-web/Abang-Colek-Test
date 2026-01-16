@@ -57,10 +57,17 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="whatsapp-bot"
+        options={{
+          title: "WhatsApp",
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
         name="more"
         options={{
           title: "More",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="menu" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="chevron.right" color={color} />,
         }}
       />
     </Tabs>
