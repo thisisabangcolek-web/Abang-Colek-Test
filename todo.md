@@ -76,3 +76,7 @@
 - [ ] Empty states with motivational messages
 - [ ] Error handling
 - [ ] Celebration animations for milestones
+
+## User Requests
+
+- [x] Add ABANG COLEK logo to dashboard header

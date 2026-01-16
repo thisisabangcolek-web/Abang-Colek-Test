@@ -1,4 +1,4 @@
-import { ScrollView, Text, View, TouchableOpacity, Platform } from "react-native";
+import { ScrollView, Text, View, TouchableOpacity, Platform, Image } from "react-native";
 import { useState, useEffect } from "react";
 import * as Haptics from "expo-haptics";
 
@@ -51,11 +51,13 @@ export default function DashboardScreen() {
     <ScreenContainer className="bg-background">
       <ScrollView contentContainerStyle={{ paddingBottom: 32 }}>
         <View className="p-6 gap-6">
-          {/* Header */}
-          <View className="gap-2">
-            <Text className="text-4xl font-bold text-foreground">
-              Abang Colek 🌶️🥭
-            </Text>
+          {/* Header with Logo */}
+          <View className="gap-4">
+            <Image
+              source={require("@/assets/images/abang-colek-logo.png")}
+              style={{ width: 200, height: 120 }}
+              resizeMode="contain"
+            />
             <Text className="text-base text-muted">
               Brand OS • Founder Dashboard
             </Text>
