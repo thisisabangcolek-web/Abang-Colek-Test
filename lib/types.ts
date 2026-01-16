@@ -41,8 +41,12 @@ export interface Hook {
   tags: string[];
   performance?: {
     views: number;
-    engagement: number;
+    likes: number;
+    shares: number;
+    engagement: number; // percentage
   };
+  usedCount: number; // how many times used in content
+  lastUsed?: string; // ISO date
   createdAt: string;
 }
 
