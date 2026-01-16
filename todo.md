@@ -81,3 +81,4 @@
 
 - [x] Add ABANG COLEK logo to dashboard header
 - [x] Fix logo background blending on dashboard
+- [x] Replace logo with new transparent background version
