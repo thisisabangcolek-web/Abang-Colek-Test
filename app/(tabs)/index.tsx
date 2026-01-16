@@ -52,13 +52,13 @@ export default function DashboardScreen() {
       <ScrollView contentContainerStyle={{ paddingBottom: 32 }}>
         <View className="p-6 gap-6">
           {/* Header with Logo */}
-          <View className="gap-4">
+          <View className="items-center gap-3 bg-primary rounded-2xl p-4">
             <Image
               source={require("@/assets/images/abang-colek-logo.png")}
-              style={{ width: 200, height: 120 }}
+              style={{ width: 240, height: 140 }}
               resizeMode="contain"
             />
-            <Text className="text-base text-muted">
+            <Text className="text-sm font-medium text-foreground">
               Brand OS • Founder Dashboard
             </Text>
           </View>

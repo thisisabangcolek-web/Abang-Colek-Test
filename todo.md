@@ -80,3 +80,4 @@
 ## User Requests
 
 - [x] Add ABANG COLEK logo to dashboard header
+- [x] Fix logo background blending on dashboard
