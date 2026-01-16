@@ -120,3 +120,48 @@
 - [x] Create bot management screen with category filters
 - [ ] Implement webhook handlers (requires backend API)
 - [ ] Create bot analytics dashboard (coming soon)
+
+## WOCS (WhatsApp OPS Control System)
+
+### Phase 1: Backend Infrastructure
+- [ ] Setup WhatsApp Cloud API webhook endpoint
+- [x] Create admin whitelist system (wocs_users table)
+- [x] Setup MySQL schema for tasks, users, logs (Drizzle ORM)
+- [x] Create database helper functions (wocs-db.ts)
+- [ ] Configure Redis queue with BullMQ
+- [ ] Implement webhook verification
+
+### Phase 2: Command Parser & Task Engine
+- [ ] Build text command parser with grammar validation
+- [ ] Create task lifecycle state machine
+- [ ] Implement task queue system
+- [ ] Add task routing to executors
+- [ ] Build audit logging system
+
+### Phase 3: Task Executors
+- [ ] Landing page executor (create/edit/publish)
+- [ ] App config executor (feature flags, settings)
+- [ ] Agent task executor (assign/track)
+- [ ] Content scheduler executor
+- [ ] Report generator executor
+- [ ] TikTok semi-auto executor
+
+### Phase 4: Voice Commands
+- [ ] Setup faster-whisper integration
+- [ ] Build voice-to-text transcription
+- [ ] Implement voice command normalization
+- [ ] Add confirmation workflow for voice commands
+
+### Phase 5: Agent Panel UI
+- [ ] Create task inbox screen
+- [ ] Build task approval workflow
+- [ ] Add real-time task updates
+- [ ] Implement task history view
+- [ ] Create analytics dashboard
+
+### Phase 6: Advanced Features
+- [ ] Scheduled tasks with cron
+- [ ] Task templates system
+- [ ] Batch command execution
+- [ ] Rollback & undo functionality
+- [ ] Analytics integration
