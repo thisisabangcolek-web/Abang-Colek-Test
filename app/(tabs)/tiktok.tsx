@@ -2,6 +2,7 @@ import {
   ScrollView,
   Text,
   View,
+  Pressable,
   TouchableOpacity,
   TextInput,
   Platform,
@@ -249,10 +250,10 @@ export default function TikTokScreen() {
               </View>
             ) : (
               filteredHooks.map((hook) => (
-                <TouchableOpacity
+                <Pressable
                   key={hook.id}
                   onPress={() => copyToClipboard(hook.text, hook.id)}
-                  style={({ pressed }: { pressed: boolean }) => ({
+                  style={({ pressed }) => ({
                     opacity: pressed ? 0.7 : 1,
                   })}
                   className="bg-surface rounded-2xl p-4 border border-border gap-3"
@@ -316,20 +317,20 @@ export default function TikTokScreen() {
                       </Text>
                     </View>
                   </View>
-                </TouchableOpacity>
+                </Pressable>
               ))
             )}
           </View>
 
           {/* Add New Hook Button */}
-          <TouchableOpacity
+          <Pressable
             onPress={() => {
               if (Platform.OS !== "web") {
                 Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
               }
               Alert.alert("Coming Soon", "Hook creation feature coming soon!");
             }}
-            style={({ pressed }: { pressed: boolean }) => ({
+            style={({ pressed }) => ({
               opacity: pressed ? 0.8 : 1,
               transform: [{ scale: pressed ? 0.98 : 1 }],
             })}
@@ -338,7 +339,7 @@ export default function TikTokScreen() {
             <Text className="text-base font-bold text-white">
               ➕ Add New Hook
             </Text>
-          </TouchableOpacity>
+          </Pressable>
         </View>
       </ScrollView>
     </ScreenContainer>
